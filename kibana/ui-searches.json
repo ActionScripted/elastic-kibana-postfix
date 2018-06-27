@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "4cdea1d0-7891-11e8-a41e-1930b01c3fee",
+    "_type": "search",
+    "_source": {
+      "title": "Postfix logs [Filebeat Postfix]",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "beat.hostname",
+        "program",
+        "postfix_queueid",
+        "message"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"filebeat-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"postfix:* \"},\"filter\":[]}"
+      }
+    }
+  }
+]
