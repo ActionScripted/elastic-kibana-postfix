@@ -7,9 +7,9 @@ A set of Kibana files (JSON) to automatically setup a Postfix dashboard based on
 Usage
 ---
 
-Two import methods are supported: Kibana Management UI and Kibana Dashboard API. They both do the same thing, your choice is base on which you prefer or are more comfortable with.
+Two import methods are supported: Kibana Management UI and Kibana Dashboard API. They both do the same thing, your choice is based on which you prefer or which one you have access to.
 
-Import using Management UI:
+**Import using Management UI**:
   * Open your Kibana dashboard.
   * Go to Management > Kibana > Saved Objects.
   * Click Import.
@@ -18,12 +18,12 @@ Import using Management UI:
     * `kibana/ui-searches.json`
     * `kibana/ui-visualizations.json`
   * Click Open
-  * View at Dashboards > [Filebeat Postfix] Overview
+  * View at Dashboards > [Filebeat Postfix] Overview.
 
-Import using Dashboard API:
+**Import using Dashboard API**:
   * Copy `kibana/api-combined.json` to your Kibana server.
   * Run `curl -XPOST localhost:5601/api/kibana/dashboards/import -H 'kbn-xsrf:true' -H 'Content-type:application/json' -d @api-combined.json`
-  * View at Dashboards > [Filebeat Postfix] Overview
+  * View at Dashboards > [Filebeat Postfix] Overview.
 
 
 Setup Logstash
@@ -33,7 +33,7 @@ While you can absolutely visit [postfix-grok-patterns](https://github.com/whyscr
 
 
 Create patterns directory (*if not present*):
-``bash
+```bash
 cd /etc/logstash
 mkdir patterns.d
 ```
