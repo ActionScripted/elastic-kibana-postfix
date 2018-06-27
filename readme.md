@@ -12,6 +12,9 @@ Usage
 
 Two import methods are supported: Kibana Management UI and Kibana Dashboard API. They both do the same thing, your choice is based on which you prefer or which one you have access to.
 
+These imports should be run after setting up Logstash (and Filebeat) using [whyscream's postfix-grok-patterns](https://github.com/whyscream/postfix-grok-patterns) setup or our slightly modified version below.
+
+
 **Import using Management UI**:
   * Open your Kibana dashboard.
   * Go to Management > Kibana > Saved Objects.
