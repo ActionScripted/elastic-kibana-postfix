@@ -110,3 +110,8 @@ systemctl restart filebeat
 License
 ---
 MIT Licensed
+
+
+Acknowledgement
+---
+All we're doing here is setting up Kibana visuals. The real work for most of this comes from [whyscream's postfix-grok-patterns](https://github.com/whyscream/postfix-grok-patterns). We just wrapped grok with a field check and setup Filebeat.
