@@ -54,11 +54,11 @@ filter {
 }
 ```
 
-Note: this is basically what's suggested from whyscream's repo, with our own postfix (field) check that's set as part of filebeat's shipper.
+*Note: this is basically what's suggested from whyscream's repo, with our own postfix (field) check that's set as part of filebeat's shipper.*
 
 Create `conf.d/49-beats-postfix.conf`:
-  Grab https://github.com/whyscream/postfix-grok-patterns/blob/master/50-filter-postfix.conf
-  Put it at conf.d/49-beats-postfix.conf (*or whatever you want to name it*)
+  * Grab https://github.com/whyscream/postfix-grok-patterns/blob/master/50-filter-postfix.conf
+  * Put it at `conf.d/49-beats-postfix.conf` (*or whatever you want to name it*)
 
 Restart logstash:
 ```bash
