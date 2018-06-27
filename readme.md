@@ -4,6 +4,9 @@ Postfix Dashboards, Visualizations and Saved Searches for Kibana
 A set of Kibana files (JSON) to automatically setup a Postfix dashboard based on data stored in Elastic Search using [postfix-grok-patterns](https://github.com/whyscream/postfix-grok-patterns). Also includes general setup information using Filebeat and Logstash.
 
 
+![Kibana dashboard screenshot](https://raw.githubusercontent.com/ActionScripted/elastic-kibana-postfix/master/screenshot.png)
+
+
 Usage
 ---
 
