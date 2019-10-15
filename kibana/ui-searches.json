@@ -7,7 +7,7 @@
       "description": "",
       "hits": 0,
       "columns": [
-        "beat.hostname",
+        "agent.hostname",
         "program",
         "postfix_queueid",
         "message"
